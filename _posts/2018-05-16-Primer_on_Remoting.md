@@ -3,8 +3,6 @@ layout: post
 title: "A Primer on X-Remoting with VNC, RDP, XDMCP and SSH"
 ---
 
-# A primer on X-Remoting with VNC, RDP, XDMCP and SSH
-
 **Tools used:**
 - vncserver
 - xrdp
