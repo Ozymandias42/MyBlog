@@ -30,8 +30,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 github_username:  ozymandias42
 
 # Build settings
-#theme: jekyll-theme-minimal
-remote_theme: kitian616/jekyll-TeXt-theme
+theme: jekyll-theme-minimal
+
 plugins:
   - jekyll-feed
 
