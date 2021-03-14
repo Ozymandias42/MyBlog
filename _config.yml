@@ -30,7 +30,7 @@ url: "https://ozymandias42.github.io" # the base hostname & protocol for your si
 github_username:  ozymandias42
 
 # Build settings
-theme: jekyll-theme-minimal
+theme: minima
 
 plugins:
   - jekyll-feed
