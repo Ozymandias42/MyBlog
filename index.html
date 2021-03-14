@@ -1,15 +1,21 @@
----
-layout: default
-title: Main Page
----
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
+<head>
+<!-- HTML Codes by Quackit.com -->
+<title>
+Ozymandias42's Blog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="This is a place where I collect all the little documented tips and tricks that did cost me hours to find.">
+<style>
+body {background-color:#ffffff;background-repeat:no-repeat;background-position:top left;background-attachment:fixed;}
+h1{font-family:Arial, sans-serif;color:#000000;background-color:#ffffff;}
+p {font-family:Georgia, serif;font-size:14px;font-style:normal;font-weight:normal;color:#000000;background-color:#ffffff;}
+</style>
+</head>
+<body>
+<h1>Ozymandias42's Blog</h1>
+<p>Welcome to my Blog!</p>
+<p>Here I post my personal notes no how things work and how to configure them.</p>
 <ul>
   {% for post in site.posts %}
     <li>
@@ -17,5 +23,7 @@ title: Main Page
     </li>
   {% endfor %}
 </ul>
-  </body>
+
+</body>
 </html>
+
