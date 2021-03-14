@@ -1,11 +1,4 @@
-# AppleFoxUser42.github.io
-#Blog of Ozymandias42
+# Blog of Ozymandias42
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
-
+My Jekyll Blog where I make public the things I've documented for myself.  
+...I might also share thoughts on some things.
