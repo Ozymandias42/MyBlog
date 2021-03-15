@@ -1,6 +1,8 @@
 ---
 title: "A Primer on X-Remoting with VNC, RDP, XDMCP and SSH"
+tags: "linux remoting sysinternals administration"
 ---
+_A short overview over a handful of common different tools used for for Application Remoting on the X-Window System, Xorg._
 
 **Tools used:**
 - vncserver
