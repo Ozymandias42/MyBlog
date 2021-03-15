@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "A Primer on X-Remoting with VNC, RDP, XDMCP and SSH"
 ---
 
