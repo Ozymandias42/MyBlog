@@ -30,10 +30,13 @@ url: "https://ozymandias42.github.io" # the base hostname & protocol for your si
 github_username:  ozymandias42
 
 # Build settings
-theme: minima
+#theme: minima
+remote_theme: "mmistakes/minimal-mistakes@4.22.0"
+minimal_mistakes_skin: "dark"
 
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
 
 defaults:
   -
