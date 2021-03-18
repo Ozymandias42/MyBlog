@@ -11,13 +11,13 @@ I wanted to:
 
 - Have an aarch64 Kernel and up to date 64bit software/libraries
 - Install the distro in question headlessly
-- run a networked pulseaudio server
-- run a shairport-sync server in conjunction with the aforementioned pulseaudio server to get AirPlay support
-- run a, (always on) Syncthing server
-- run a recent version of docker for a [ Portainer ] (https://www.portainer.io/products/community-edition) and [ Nextcloud ] (https://hub.docker.com/_/nextcloud) server
-- experiment with the currently developed [ ownCloud-oCIS ] (https://owncloud.github.io/ocis/) server.  
+- Run a networked pulseaudio server
+- Run a shairport-sync server in conjunction with the aforementioned pulseaudio server to get AirPlay support
+- Run a, (always on) Syncthing server
+- Run a recent version of docker for a [Portainer](https://www.portainer.io/products/community-edition) and [Nextcloud](https://hub.docker.com/_/nextcloud) server
+- Experiment with the currently developed [ownCloud-oCIS](https://owncloud.github.io/ocis/) server.  
   Preferably in docker.
-- be able to update the host OS and reboot the machine. Yes, this needs to be said unfortunately.
+- Be able to update the host OS and reboot the machine. Yes, this needs to be said unfortunately.
 
 Here's the list of Distro's used and where to download them.
 
@@ -52,7 +52,7 @@ I did decide to go with Leap here as using a slow updating point-release distro 
 Furthermore I choose the JeOS variant, which is openSUSE's equivalent to other distro's minimal variants.  
 Meaning no UI.
 
-The installation process was actually praiseworthy as the device setup networking and SSH automatically and was reachable via SSH with a [standard passwort](https://en.opensuse.org/HCL:Raspberry_Pi3) (at the time of writing root:linux) no more than 30 seconds after power on.
+The installation process was actually praiseworthy as the device setup networking and SSH automatically and was reachable via SSH with a [standard password](https://en.opensuse.org/HCL:Raspberry_Pi3) (at the time of writing root:linux) no more than 30 seconds after power on.
 
 From here on out I was dropped immediately into the yast installer and guided through the setup.
 
@@ -175,7 +175,6 @@ Sure I could have just used an Alpine nspawn just for this but damnit! This is a
 
 ## Why does it always rain on me? — BalenaOS, Cloud I guess.
 I was promised a "write to sdcard, power on, connect, go"-workflow for this one. Did it deliver?
-BalenaOS is based on 
 
 Short answer: yes.  
 Long answer: no. Yes it did. Especially if the image is downloaded via the cloud console. That way it automatically connected to my balena cloud account. Would have been nice if it was actually meant to be used for my use-caes. It wasn't though. Balena Cloud is meant to build docker images in the cloud or on end-devices and deploy them on various IoTs or SBCs. Problem is, that there is no way to properly configure or deploy the kind of images I want to run. Things like a Nextcloud+nginx stack is just not deployable with the tools given. Especially as even for communication with the node directly, Balena recommends the use of their nodejs based cli tool. There simply is no way to easily deploy compose files.
